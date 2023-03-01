@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Vue Data Subscription Principle</title>
+  </head>
+  <body>
+    <div class="card">
+      <p>
+        <label for="name">이름: </label
+        ><input
+          type="text"
+          id="name"
+          name="name"
+          oninput="user.name=this.value"
+        />
+        <label for="birth">생년월일: </label
+        ><input
+          type="date"
+          name="birth"
+          id="birth"
+          oninput="user.birth=this.value"
+        />
+      </p>
+      <p id="firstName"></p>
+      <p id="lastName"></p>
+      <p id="age"></p>
+    </div>
+
+    <script src="./customVue.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
